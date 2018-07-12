@@ -1,0 +1,57 @@
+Distributed iPDC-iPMU framework
++++++++++++++++++++++++++++++++
+
+INTRODUCTION
+============
+
+To develope a iPMU – iPDC test bed 
+
+Objectives:
+
+1. To test the scalabilty of iPDC (in terms of numbers of PMUs it can handle)
+2. Analyse the log files at iPDC to determine packet loss and latency at each iPDC
+3. Emulate the WAN by netem (an open source tool for emulating delays, losses in the network) and capture the latency and packet loss at each iPDC
+
+
+Input:
+
+a) File containing, WAMS input topology specified by the user (A graph with iPMU and iPDC connectivity)
+b) iPMU can be configured to take data either from a csv file or it can autogenerate
+c) File containing IP addresses of the physical machines 
+
+Output:
+
+Analyse the log generated at each iPDC to determine the objectives mentioned above
+
+PREREQUISITES
+=============
+1. ntp client synchronized with local ntp server
+2. mysql configured with iPDC database
+3. All machines are up
+4. Python
+
+Project Description
+===================
+a.  Read Topology
+	The WAMSTopology.csv consists of iPMU-iPDC connectivity information. The master script written in python will read the csv file in a 		dictionary. The IPAdress.csv file comprises of IP, login etc. information of the physical devices. This file is also read in the 	 list.
+
+b. PMU Deployment
+	All the PMUs would be deployed on the same physical machine. A mapping of the PMU ID to the IP address of the machine is maintained
+
+c. PDC Deployment
+	All the PDCs will be deployed, one iPDC on one physical machine. The LOG_TIME_INFO table maintained at each local iPDC is analyzed 	 	to study the packets arrival, processing etc delays.		
+
+PROJECT DEPLOYMENT
+===================
+
+a.  Input to the master script 
+	
+	1. setup files/WAMSTopology.csv: Consists of iPMU-iPDC connection details
+
+	2. setup files/IPFile.csv: Consists of machines details
+
+b. See all machines listed in setup files/IPFile.csv are up and the prerequisites mentioned are satisfied
+
+c. Download the Ditributed WAMS from the site (link) in the suitable directory and run "python main.py" on terminal
+
+d. See the log files and MySQL data base on local iPDC machines to analyse the network delays

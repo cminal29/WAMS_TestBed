@@ -1,0 +1,94 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BACKLOG	connection.h	30;"	d
+B_copy	function.c	/^void B_copy(unsigned char main[], unsigned char tmp[], int ind, int n)$/;"	f
+ConfigurationFrame	iPMU.h	/^struct ConfigurationFrame $/;"	s
+DATA_thread	connection.h	/^pthread_t UDP_thread,TCP_thread,DATA_thread;$/;"	v
+H2S	function.c	/^void H2S(char a[], unsigned char temp_6[])$/;"	f
+MAX_STRING_SIZE	iPMU.h	30;"	d
+SEND_DATA	connection.c	/^void* SEND_DATA()$/;"	f
+TB	iPMU.h	31;"	d
+TCP_PMU	connection.c	/^void* TCP_PMU()$/;"	f
+TCP_addr	connection.h	/^struct sockaddr_in UDP_addr,TCP_addr; \/* connector’s address information *\/$/;"	v	typeref:struct:
+TCP_my_addr	connection.h	/^struct sockaddr_in UDP_my_addr,TCP_my_addr; \/* my address information *\/$/;"	v	typeref:struct:
+TCP_sin_size	connection.h	/^int UDP_addr_len,TCP_sin_size, numbytes;$/;"	v
+TCP_sockfd	connection.h	/^int UDP_sockfd,TCP_sockfd; \/* socket descriptors *\/$/;"	v
+TCP_thread	connection.h	/^pthread_t UDP_thread,TCP_thread,DATA_thread;$/;"	v
+UDP_PMU	connection.c	/^void* UDP_PMU()$/;"	f
+UDP_addr	connection.h	/^struct sockaddr_in UDP_addr,TCP_addr; \/* connector’s address information *\/$/;"	v	typeref:struct:sockaddr_in
+UDP_addr_len	connection.h	/^int UDP_addr_len,TCP_sin_size, numbytes;$/;"	v
+UDP_my_addr	connection.h	/^struct sockaddr_in UDP_my_addr,TCP_my_addr; \/* my address information *\/$/;"	v	typeref:struct:sockaddr_in
+UDP_sockfd	connection.h	/^int UDP_sockfd,TCP_sockfd; \/* socket descriptors *\/$/;"	v
+UDP_thread	connection.h	/^pthread_t UDP_thread,TCP_thread,DATA_thread;$/;"	v
+auto_create_cfg	iPMU.c	/^void auto_create_cfg(int pmuID,int Frequency)$/;"	f
+c2f_ieee	function.c	/^float c2f_ieee(const void *v) $/;"	f
+c2i	function.c	/^int c2i (unsigned char temp[])$/;"	f
+c2li	function.c	/^long int c2li (unsigned char temp_3[])$/;"	f
+c2li_3byte	function.c	/^long int c2li_3byte (unsigned char temp3[])$/;"	f
+c_copy	function.c	/^void c_copy(unsigned char dst[], unsigned char src[], int ind, int n)$/;"	f
+cfg2_frm	iPMU.h	/^unsigned char cfg2_frm[MAX_STRING_SIZE];$/;"	v
+cfg2_frm_size	iPMU.h	/^int data_frm_size, cfg2_frm_size;$/;"	v
+cfg_STNname	iPMU.h	/^	char *cfg_STNname; $/;"	m	struct:ConfigurationFrame
+cfg_af	iPMU.h	/^	int  cfg_af; $/;"	m	struct:ConfigurationFrame
+cfg_analog_anunit	iPMU.h	/^	unsigned char *cfg_analog_anunit; $/;"	m	struct:ConfigurationFrame
+cfg_analog_channels	iPMU.h	/^	char *cfg_analog_channels; $/;"	m	struct:ConfigurationFrame
+cfg_annmr_val	iPMU.h	/^	int  cfg_annmr_val; $/;"	m	struct:ConfigurationFrame
+cfg_dataRate	iPMU.h	/^	int  cfg_dataRate; $/;"	m	struct:ConfigurationFrame
+cfg_dgnmr_val	iPMU.h	/^	int  cfg_dgnmr_val; $/;"	m	struct:ConfigurationFrame
+cfg_digital_channels	iPMU.h	/^	char *cfg_digital_channels; $/;"	m	struct:ConfigurationFrame
+cfg_fdf	iPMU.h	/^	int  cfg_fdf; $/;"	m	struct:ConfigurationFrame
+cfg_fnom	iPMU.h	/^	int  cfg_fnom; $/;"	m	struct:ConfigurationFrame
+cfg_info	iPMU.h	/^}*cfg_info;$/;"	v	typeref:struct:ConfigurationFrame
+cfg_pf	iPMU.h	/^	int  cfg_pf; $/;"	m	struct:ConfigurationFrame
+cfg_phasor_channels	iPMU.h	/^	char *cfg_phasor_channels; $/;"	m	struct:ConfigurationFrame
+cfg_phasor_phunit	iPMU.h	/^	unsigned char *cfg_phasor_phunit; $/;"	m	struct:ConfigurationFrame
+cfg_phnmr_val	iPMU.h	/^	int  cfg_phnmr_val; $/;"	m	struct:ConfigurationFrame
+cfg_pmuID	iPMU.h	/^	int  cfg_pmuID; $/;"	m	struct:ConfigurationFrame
+cfg_pn	iPMU.h	/^	int  cfg_pn; $/;"	m	struct:ConfigurationFrame
+channel_name	function.c	62;"	d	file:
+chk	iPMU.h	/^uint16_t chk;	\/\/ For checksum calculation$/;"	v
+compute_CRC	function.c	/^uint16_t compute_CRC(unsigned char *message,int length)$/;"	f
+csv_create_cfg	iPMU.c	/^int csv_create_cfg(int pmuID,char *filePath)$/;"	f
+data_frm	iPMU.h	/^unsigned char data_frm[MAX_STRING_SIZE];$/;"	v
+data_frm_size	iPMU.h	/^int data_frm_size, cfg2_frm_size;$/;"	v
+data_mode	iPMU.h	/^int data_mode; \/\/ 0: auto, 1: csv$/;"	v
+f2c	function.c	/^void f2c (float f, unsigned char temp_1[])$/;"	f
+fp_csv	iPMU.h	/^FILE *fp_csv;$/;"	v
+fracsec	iPMU.h	/^long int soc, fracsec, fsecNum;$/;"	v
+fsecNum	iPMU.h	/^long int soc, fracsec, fsecNum;$/;"	v
+generate_data_frame	iPMU.c	/^void generate_data_frame()$/;"	f
+i2c	function.c	/^void i2c (int t, unsigned char temp[])$/;"	f
+li2c	function.c	/^void li2c (long int t1, unsigned char temp_1[])$/;"	f
+li2c_3byte	function.c	/^void li2c_3byte (long int t1, unsigned char temp3[])$/;"	f
+logFile	iPMU.h	/^FILE *logFile;  \/\/\/KK$/;"	v
+logfilename	iPMU.h	/^char logfilename[10]; \/\/KK$/;"	v
+main	iPMU.c	/^int main(int argc,char **argv)$/;"	f
+measurement_Return	function.c	/^char* measurement_Return ()$/;"	f
+mutex_data	connection.c	/^pthread_mutex_t mutex_data = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+mutex_data	connection.h	/^pthread_mutex_t mutex_data;  \/* To manage data ON\/OFF *\/$/;"	v
+numbytes	connection.h	/^int UDP_addr_len,TCP_sin_size, numbytes;$/;"	v
+phase_ang	iPMU.c	/^float phase_ang[] 	= {-120.6,0.65,120.45}; $/;"	v
+phasorI_meg	iPMU.c	/^float phasorI_meg[] = {0.998,1.0,0.994};	\/\/ Current nominal as 1.0Amp$/;"	v
+phasorV_meg	iPMU.c	/^float phasorV_meg[] = {63.48,63.50,63.52};	\/\/ Voltage nominal as 63.5V$/;"	v
+pmuse	iPMU.c	/^int pmuse = 0;$/;"	v
+prev_soc	iPMU.c	/^long int prev_soc = 0;$/;"	v
+sa	connection.h	/^struct sigaction sa;$/;"	v	typeref:struct:sigaction
+server	connection.c	/^void server(int id, int uport, int tport)$/;"	f
+sigchld_handler	function.c	/^void sigchld_handler(int s)$/;"	f
+soc	iPMU.h	/^long int soc, fracsec, fsecNum;$/;"	v
+status	connection.h	/^struct status $/;"	s
+status_info	connection.h	/^}*status_info;$/;"	v	typeref:struct:status
+tcp_new_fd	connection.h	/^	int tcp_new_fd; $/;"	m	struct:status
+tcp_send_status	connection.h	/^	int tcp_send_status; $/;"	m	struct:status
+tcp_send_status	connection.h	/^int tcp_send_status;	\/\/ 0-ON, 1-OFF$/;"	v
+tim	iPMU.h	/^struct timeval tim;$/;"	v	typeref:struct:timeval
+to_int_convertor	function.c	/^unsigned int to_int_convertor(unsigned char array[]) {$/;"	f
+to_long_int_convertor	function.c	/^unsigned int to_long_int_convertor(unsigned char array[]) {$/;"	f
+to_long_int_convertor1	function.c	/^unsigned int to_long_int_convertor1(unsigned char array[]) {$/;"	f
+udp_send_status	connection.h	/^	int udp_send_status; $/;"	m	struct:status
+udp_send_status	connection.h	/^int udp_send_status;	\/\/ 0-ON, 1-OFF$/;"	v
+yes	connection.c	/^int yes = 1; 	\/* argument to setsockopt *\/$/;"	v

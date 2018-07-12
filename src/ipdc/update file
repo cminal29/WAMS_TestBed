@@ -1,0 +1,18 @@
+12-03-13
+
+1. Commented Line for wait time logic in ipdc.c
+
+13-07-13
+
+1. Added a new table LOG_TIME_INFO
+2. Logging the times at different points in the LOG_TIME_INFO table completed 
+
+15-07-13
+1.Commented the printf in the iPDC parser.c
+
+16-07-13
+A bug in ipdc.c interchange of TCP and UDP ports
+
+2013-07-17 23:07:47 
+A bug resolved from in align_sort.c in function timealign()
+
